@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    tools:context=".DriverLoginRegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/cartlogoId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cartlogo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/driverlogregTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cartlogoId"
+        android:text="Driver Login"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="0dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/driveremailedtlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driverlogregTxt"
+        app:hintTextAppearance="@style/emailedttxtstyle"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/primaryTextColor"
+        android:background="@drawable/button_stroke"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/driveremailedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/driverpasswordedtlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driveremailedtlayout"
+        app:hintTextAppearance="@style/passedttxtstyle"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/primaryTextColor"
+        android:background="@drawable/button_stroke"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/driverpasswordedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/driverloginBtnId"
+        android:layout_below="@id/driverpasswordedtlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primaryDarkColor"
+        />
+
+   <TextView
+       android:id="@+id/drivernotregisteredTxtId"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/driverloginBtnId"
+       android:text="Have you no any account? Register"
+       android:textColor="@color/primaryTextColor"
+       android:textAlignment="center"
+       android:layout_marginTop="10dp"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       />
+    <Button
+        android:id="@+id/driverregisterBtnId"
+        android:layout_below="@id/drivernotregisteredTxtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_stroke"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primaryTextColor"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

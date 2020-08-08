@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="269dp"
+        android:src="@drawable/cart" />
+
+    <TextView
+        android:id="@+id/cartTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:text="Cart"
+        android:textColor="@android:color/white"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/poweredbytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered by"
+        android:textAlignment="center"
+        android:layout_above="@id/itexhTxt"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:id="@+id/itexhTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITexh71"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>
